@@ -75,7 +75,7 @@ Utilizamos dados climáticos históricos, mapeamento geoespacial e indicadores o
 st.divider()
 
 # 2. ARQUITETURA DO PROJETO (PROCESSOS ENUMERADOS E INTERATIVOS)
-st.header("🛠️ Arquitetura e Processos")
+st.header("Arquitetura e Processos")
 st.write("Selecione uma etapa para ver os detalhes técnicos:")
 
 # Uso de Tabs para uma visualização enumerada e organizada
@@ -134,7 +134,7 @@ with tab4:
 st.divider()
 
 # 3. ANÁLISES GEOESPACIAIS (PNGs)
-st.header("📊 Análises Geoespaciais")
+st.header("Análises de Clusters")
 pngs = [
     ("clusters_pca.png", "Clusters de Risco (PCA)"),
     ("distribuicao_espacial_clusters.png", "Mapa de Calor por Bairros"),
@@ -151,7 +151,7 @@ for name, legenda in pngs:
         st.write("---")
 
 # 4. DADOS CLIMÁTICOS (CSV)
-st.header("📈 Dados Climáticos Otimizados")
+st.header("Dados da Planilha Clima otimizado")
 csv_path = DADOS / ARQUIVO_CLIMA
 if csv_path.exists():
     df_clima = pd.read_csv(csv_path)
